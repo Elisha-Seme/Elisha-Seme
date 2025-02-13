@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on Iot and AI development
 - 📫 How to reach me: elishaseme99@gmail.com, : +254791 007 848
 - 😄 Pronouns: He, Him
-- ⚡ Fun fact: Whar if we had an AI government, hahaa, kidding 😄
+- ⚡ Fun fact: What if we had an AI government, hahaa, kidding 😄
 
 <!---
 Elisha-Seme/Elisha-Seme is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
