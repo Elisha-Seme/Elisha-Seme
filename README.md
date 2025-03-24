@@ -1,9 +1,9 @@
-👋 Hi, I’m Elisha Papa
-💻 I’m passionate about Cybersecurity 🛡️, AI & ML 🤖, the Internet of Things (IoT) 🌐, Web App Development 🌎, and Android Development 📱.
+ Hi, I’m Elisha Papa
+💻 I’m passionate about Cybersecurity, AI & ML , the Internet of Things (IoT), Web App Development, and Android Development.
 
-🌱 Currently learning: IoT Development ⚙️
+ Currently learning: IoT Development ⚙️
 
-🤝 Looking to collaborate on: IoT and AI projects 🚀
+ Looking to collaborate on: IoT and AI projects 🚀
 
 📫 How to reach me:
 ✉️ Email: elishaseme99@gmail.com
