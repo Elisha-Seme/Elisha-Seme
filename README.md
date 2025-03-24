@@ -1,12 +1,18 @@
-- 👋 Hi, I’m Elisha-Seme Papa
--  👀 I’m interested in Cyber security, AI & ML, Internet of Things, Web App development and Android Developlment
-- 🌱 I’m currently learning IoT Development
-- 💞️ I’m looking to collaborate on Iot and AI development
-- 📫 How to reach me: elishaseme99@gmail.com, : +254791 007 848
-- 😄 Pronouns: He, Him
-- ⚡ Fun fact: What if we had an AI government, hahaa, kidding 😄
+👋 Hi, I’m Elisha  Papa
+👀 I’m passionate about Cybersecurity, AI & ML, the Internet of Things (IoT), Web App Development, and Android Development.
 
-<!---
-Elisha-Seme/Elisha-Seme is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+🌱 Currently, I’m learning IoT Development.
+
+💞️ I’m looking to collaborate on IoT and AI projects.
+
+📫 How to reach me:
+
+Email: elishaseme99@gmail.com
+
+Phone: +254 791 007 848
+
+😄 Pronouns: He/Him
+
+⚡ Fun fact: What if we had an AI government? Haha, just kidding! 😄
+
+<!--- Elisha-Seme/Elisha-Seme is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile. You can click the Preview link to check out your changes. --->
