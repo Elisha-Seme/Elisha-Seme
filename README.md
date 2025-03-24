@@ -1,5 +1,5 @@
 👋 Hi, I’m Elisha  Papa
-👀 I’m passionate about Cybersecurity, AI & ML, the Internet of Things (IoT), Web App Development, and Android Development.
+ I’m passionate about Cybersecurity, AI & ML, the Internet of Things (IoT), Web App Development, and Android Development.
 
 🌱 Currently, I’m learning IoT Development.
 
