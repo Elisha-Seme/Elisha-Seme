@@ -8,7 +8,7 @@
 - Mobile Application Development
 
 ## Current Focus
-Expanding expertise in IoT Development
+Expanding expertise AI/MAchine Leaning and in IoT Development
 
 ## Collaboration Interests
 Open to collaboration on IoT and AI projects
