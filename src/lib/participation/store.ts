@@ -1,0 +1,5 @@
+import {opportunities,questions,social} from './demo';
+export const getOpportunity=(id:string)=>opportunities.find(o=>o.id===id);
+export const getQuestions=(id:string)=>questions.filter(q=>q.opportunityId===id);
+export const getSocial=(id:string)=>social.filter(s=>s.opportunityId===id);
+export function results(id:string){const o=getOpportunity(id);if(!o)return null;return{totalDirectSubmissions:o.responseCount,byChannel:{web:Math.max(0,o.responseCount-2),whatsapp_demo:Math.min(2,o.responseCount)},byCounty:o.scope==='county'?{'Elgeyo Marakwet':o.responseCount}:{Nairobi:6,Mombasa:5,'Suppressed / other':Math.max(0,o.responseCount-11)},sentiment:{supportive:1,skeptical:1,mixed:0,neutral:0},timeline:[{date:o.opens,count:2},{date:o.closes,count:o.responseCount}],clusters:[{label:o.keyIssues[0],size:Math.max(1,Math.floor(o.responseCount/2))},{label:o.keyIssues[1],size:Math.max(1,Math.floor(o.responseCount/3))}],socialMentionCount:getSocial(id).length,minimumThreshold:5,officialResponse:{status:id==='beyond-2030'?'Under consideration':'Awaiting response',institution:o.institution,lastUpdated:'2026-09-10'}}}

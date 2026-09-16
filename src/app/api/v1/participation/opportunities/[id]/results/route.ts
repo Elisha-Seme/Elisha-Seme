@@ -1,0 +1,1 @@
+import {ok,fail} from '@/lib/participation/http';import {demoResults} from '@/lib/participation/demo-runtime';export const dynamic='force-dynamic';export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){const {id}=await params,r=demoResults(id);return r?ok(r):fail(404,'not_found','Opportunity not found')}

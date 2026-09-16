@@ -1,0 +1,1 @@
+export interface MessagingProvider{sendConfirmation(destinationHash:string,reference:string):Promise<void>} export class LocalSimulatorProvider implements MessagingProvider{async sendConfirmation(){return}}

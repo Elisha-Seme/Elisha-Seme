@@ -1,0 +1,9 @@
+import type {AiProvider,Cluster,Sentiment,Summary} from './AiProvider';
+const positive:string[]=['support','good','helpful','improve','opportunity','nafasi','vizuri','sawa','jobs']; const negative:string[]=['oppose','bad','unfair','expensive','corrupt','shida','ghali','hapana'];
+const words=(s:string):string[]=>s.toLowerCase().match(/[a-zÀ-ž]{3,}/g)??[];
+export class LocalDemoAiProvider implements AiProvider{
+ summarize(text:string):Summary{const ps=text.split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean);const selected=ps.slice(0,5).map((p,i)=>({sentence:(p.match(/[^.!?]+[.!?]?/)?.[0]??p).trim(),ref:`Paragraph ${i+1}`}));return{text:selected.map(x=>x.sentence).join(' '),references:selected.map(x=>x.ref)}}
+ sentiment(text:string):Sentiment{const ws=words(text),p=ws.filter(x=>positive.includes(x)).length,n=ws.filter(x=>negative.includes(x)).length;const label=p&&n?'mixed':p?'supportive':n?'skeptical':'neutral';const hits=p+n;return{label,confidence:hits>=3?'high':hits>=1?'medium':'low',scores:{positive:p,negative:n}}}
+ cluster(texts:string[]):Cluster[]{const counts=new Map<string,number>();texts.flatMap(words).filter(w=>w.length>4).forEach(w=>counts.set(w,(counts.get(w)??0)+1));const keys=[...counts].filter(([,n])=>n>1).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,5).map(([w])=>w);const clusters=keys.map(k=>({label:`Views about ${k}`,keywords:[k],memberIndexes:texts.map((t,i)=>words(t).includes(k)?i:-1).filter(i=>i>=0)})).filter(c=>c.memberIndexes.length);return clusters.length?clusters:[{label:'Other views',keywords:[],memberIndexes:texts.map((_,i)=>i)}]}
+ moderate(text:string){const risk=/(kill|bomb|attack|national id|password|\b\d{7,}\b)/i.test(text);return risk?{flagged:true,reason:'Configured risk phrase or sensitive-number pattern detected.',recommendation:'Needs human review.' as const}:{flagged:false}}
+}
