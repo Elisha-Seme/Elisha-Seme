@@ -1,0 +1,1 @@
+import Link from 'next/link';export default function NotFound(){return <div className="card"><h1 className="text-3xl">Opportunity not found</h1><p>It may be unpublished, archived, or the link may be incorrect.</p><Link className="btn mt-4" href="/participation">Return to opportunities</Link></div>}

@@ -1,0 +1,2 @@
+export type Opportunity={id:string;title:string;institution:string;type:string;scope:'national'|'county';county?:string;opens:string;closes:string;status:'open'|'closed'|'archived';responseCount:number;channels:string[];summary:string;keyIssues:string[];sourceUrl:string;sourceTitle:string;citations:string[];isDemo:boolean};
+export type Question={id:string;opportunityId:string;prompt:string;kind:'single'|'multiple';options:string[]};

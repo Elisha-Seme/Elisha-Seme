@@ -1,0 +1,1 @@
+'use client'; export default function Error({reset}:{reset:()=>void}){return <div role="alert" className="card"><h2>We could not load opportunities</h2><button className="btn mt-4" onClick={reset}>Try again</button></div>}

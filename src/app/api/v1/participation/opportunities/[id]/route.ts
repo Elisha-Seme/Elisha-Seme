@@ -1,0 +1,1 @@
+import {ok,fail} from '@/lib/participation/http';import {getOpportunity,getQuestions} from '@/lib/participation/store';export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){const {id}=await params,o=getOpportunity(id);return o?ok({...o,questions:getQuestions(id)}):fail(404,'not_found','Opportunity not found')}

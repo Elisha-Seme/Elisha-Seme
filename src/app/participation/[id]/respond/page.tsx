@@ -1,0 +1,2 @@
+import {notFound} from 'next/navigation';import {getOpportunity,getQuestions} from '@/lib/participation/store';import ResponseForm from './response-form';
+export default async function Respond({params}:{params:Promise<{id:string}>}){const {id}=await params,o=getOpportunity(id);if(!o)notFound();return <><h1 className="text-4xl font-bold">Respond: {o.title}</h1><p className="my-3">Anonymous participation. Do not include a phone number, national ID, password, or other personal information.</p><ResponseForm opportunityId={id} questions={getQuestions(id)}/></>}
